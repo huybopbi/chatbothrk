@@ -14,7 +14,7 @@ const option = {
 	userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
 };
 
-//Hãy điền tài khoản và mật khẩu vào file .env sau khi đã đổi .env.example thành .env
+//Hãy ài khoản và mật khẩu vào file .env sau khi đã đổi .env.example thành .env
 const obj = { email: "eka107@hotmail.com", password: "huydzok2"  };
 login(obj, option, (err, api) => {
 	if (err) {
