@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/config'));
 app.use(express.static(__dirname + '/config/dbviewer'));
 const listener = app.listen(process.env.PORT, () => logger("Đã mở tại port: " + listener.address().port), 0);
 
-if (process.env.REFRESHING == 'on') setTimeout(() => {
+setTimeout(() => {
 	console.log("Đang làm mới sau 10 phút!");
 	cmd.run("pm2 restart 0");
 }, 600000);
