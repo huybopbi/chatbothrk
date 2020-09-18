@@ -15,7 +15,7 @@ const option = {
 };
 
 //Hãy ài khoản và mật khẩu vào file .env sau khi đã đổi .env.example thành .env
-const obj = { email: "eka107@hotmail.com", password: "huydzok2"  };
+const obj = { email: "eka107@hotmail.com", password: ""  };
 login(obj, option, (err, api) => {
 	if (err) {
 		switch (err.error) {
